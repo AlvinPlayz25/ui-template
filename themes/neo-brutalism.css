@@ -1,0 +1,165 @@
+.theme-neo-brutalism {
+  /* Neo-Brutalism Theme - Bold, vibrant colors, thick borders, raw functionality */
+
+  /* Base colors - Bright yellow background like in the screenshot */
+  --background: 255 235 59; /* Bright yellow */
+  --foreground: 0 0 0;
+
+  /* Muted colors */
+  --muted: 245 245 245;
+  --muted-foreground: 64 64 64;
+
+  /* Popover colors */
+  --popover: 255 235 59;
+  --popover-foreground: 0 0 0;
+
+  /* Card colors - Bright yellow like the screenshot */
+  --card: 255 235 59;
+  --card-foreground: 0 0 0;
+
+  /* Border and input */
+  --border: 0 0 0;
+  --input: 0 0 0;
+
+  /* Primary colors - Red like the "CLICK ME" button */
+  --primary: 244 67 54; /* Bright red */
+  --primary-foreground: 255 255 255;
+
+  /* Secondary colors - Blue like the "Bold" button */
+  --secondary: 33 150 243; /* Bright blue */
+  --secondary-foreground: 255 255 255;
+
+  /* Accent colors - Green like the "Raw" button */
+  --accent: 76 175 80; /* Bright green */
+  --accent-foreground: 255 255 255;
+
+  /* Destructive colors */
+  --destructive: 244 67 54;
+  --destructive-foreground: 255 255 255;
+
+  /* Ring color */
+  --ring: 0 0 0;
+
+  /* Radius - Sharp edges for brutalist aesthetic */
+  --radius: 0rem;
+
+  /* Custom brutalist properties */
+  --brutalist-shadow: 8px 8px 0px 0px #000;
+  --brutalist-border: 4px solid #000;
+  --brutalist-hover-offset: 4px;
+
+  /* Additional brutalist colors for variety */
+  --brutalist-purple: 156 39 176; /* Purple like "Expressive" button */
+  --brutalist-yellow: 255 235 59;
+  --brutalist-red: 244 67 54;
+  --brutalist-blue: 33 150 243;
+  --brutalist-green: 76 175 80;
+}
+
+.theme-neo-brutalism.dark {
+  /* Dark mode - Keep the bold aesthetic but with dark background */
+  --background: 18 18 18;
+  --foreground: 255 255 255;
+
+  --muted: 38 38 38;
+  --muted-foreground: 200 200 200;
+
+  --popover: 18 18 18;
+  --popover-foreground: 255 255 255;
+
+  --card: 38 38 38;
+  --card-foreground: 255 255 255;
+
+  --border: 255 255 255;
+  --input: 255 255 255;
+
+  /* Keep vibrant colors in dark mode */
+  --primary: 255 82 82;
+  --primary-foreground: 0 0 0;
+
+  --secondary: 66 165 245;
+  --secondary-foreground: 0 0 0;
+
+  --accent: 102 187 106;
+  --accent-foreground: 0 0 0;
+
+  --brutalist-shadow: 8px 8px 0px 0px #fff;
+  --brutalist-border: 4px solid #fff;
+
+  /* Dark mode brutalist colors */
+  --brutalist-purple: 186 104 200;
+  --brutalist-yellow: 255 241 118;
+  --brutalist-red: 255 82 82;
+  --brutalist-blue: 66 165 245;
+  --brutalist-green: 102 187 106;
+}
+
+/* Enhanced brutalist component styles with vibrant colors */
+.theme-neo-brutalism .brutalist-card {
+  border: var(--brutalist-border);
+  box-shadow: var(--brutalist-shadow);
+  transition: all 0.1s ease;
+  background: rgb(var(--brutalist-yellow));
+}
+
+.theme-neo-brutalism .brutalist-card:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 10px 10px 0px 0px #000;
+}
+
+.theme-neo-brutalism .brutalist-button {
+  border: var(--brutalist-border);
+  box-shadow: 4px 4px 0px 0px #000;
+  transition: all 0.1s ease;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-family: monospace;
+}
+
+.theme-neo-brutalism .brutalist-button:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px 0px #000;
+}
+
+.theme-neo-brutalism .brutalist-button:active {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0px 0px #000;
+}
+
+/* Specific button color variants for Neo-Brutalism */
+.theme-neo-brutalism .brutalist-button-red {
+  background: rgb(var(--brutalist-red));
+  color: white;
+}
+
+.theme-neo-brutalism .brutalist-button-blue {
+  background: rgb(var(--brutalist-blue));
+  color: white;
+}
+
+.theme-neo-brutalism .brutalist-button-green {
+  background: rgb(var(--brutalist-green));
+  color: white;
+}
+
+.theme-neo-brutalism .brutalist-button-purple {
+  background: rgb(var(--brutalist-purple));
+  color: white;
+}
+
+/* Dark mode adjustments for buttons */
+.theme-neo-brutalism.dark .brutalist-button {
+  box-shadow: 4px 4px 0px 0px #fff;
+}
+
+.theme-neo-brutalism.dark .brutalist-button:hover {
+  box-shadow: 6px 6px 0px 0px #fff;
+}
+
+.theme-neo-brutalism.dark .brutalist-button:active {
+  box-shadow: 2px 2px 0px 0px #fff;
+}
+
+.theme-neo-brutalism.dark .brutalist-card:hover {
+  box-shadow: 10px 10px 0px 0px #fff;
+}

@@ -1,0 +1,121 @@
+.theme-neumorphism {
+  /* Neumorphism Theme - Soft, extruded UI elements with subtle shadows */
+
+  /* Base colors - Monochromatic palette */
+  --background: 230 230 230;
+  --foreground: 60 60 60;
+
+  /* Muted colors */
+  --muted: 220 220 220;
+  --muted-foreground: 100 100 100;
+
+  /* Popover colors */
+  --popover: 230 230 230;
+  --popover-foreground: 60 60 60;
+
+  /* Card colors */
+  --card: 230 230 230;
+  --card-foreground: 60 60 60;
+
+  /* Border and input */
+  --border: 200 200 200;
+  --input: 220 220 220;
+
+  /* Primary colors - Soft and subtle */
+  --primary: 120 120 120;
+  --primary-foreground: 255 255 255;
+
+  /* Secondary colors */
+  --secondary: 210 210 210;
+  --secondary-foreground: 80 80 80;
+
+  /* Accent colors */
+  --accent: 200 200 200;
+  --accent-foreground: 60 60 60;
+
+  /* Destructive colors */
+  --destructive: 180 100 100;
+  --destructive-foreground: 255 255 255;
+
+  /* Ring color */
+  --ring: 150 150 150;
+
+  /* Radius - Soft rounded corners */
+  --radius: 1rem;
+
+  /* Custom neumorphic properties */
+  --neomorphic-shadow-light: -8px -8px 16px rgba(255, 255, 255, 0.8);
+  --neomorphic-shadow-dark: 8px 8px 16px rgba(0, 0, 0, 0.1);
+  --neomorphic-inset-light: inset 8px 8px 16px rgba(0, 0, 0, 0.1);
+  --neomorphic-inset-dark: inset -8px -8px 16px rgba(255, 255, 255, 0.8);
+}
+
+.theme-neumorphism.dark {
+  --background: 40 40 40;
+  --foreground: 220 220 220;
+
+  --muted: 50 50 50;
+  --muted-foreground: 180 180 180;
+
+  --popover: 40 40 40;
+  --popover-foreground: 220 220 220;
+
+  --card: 40 40 40;
+  --card-foreground: 220 220 220;
+
+  --border: 60 60 60;
+  --input: 50 50 50;
+
+  --primary: 140 140 140;
+  --primary-foreground: 20 20 20;
+
+  --secondary: 50 50 50;
+  --secondary-foreground: 200 200 200;
+
+  --accent: 60 60 60;
+  --accent-foreground: 220 220 220;
+
+  --destructive: 160 80 80;
+  --destructive-foreground: 255 255 255;
+
+  --ring: 120 120 120;
+
+  --neomorphic-shadow-light: -8px -8px 16px rgba(80, 80, 80, 0.8);
+  --neomorphic-shadow-dark: 8px 8px 16px rgba(0, 0, 0, 0.3);
+  --neomorphic-inset-light: inset 8px 8px 16px rgba(0, 0, 0, 0.3);
+  --neomorphic-inset-dark: inset -8px -8px 16px rgba(80, 80, 80, 0.8);
+}
+
+/* Neumorphic component styles */
+.theme-neumorphism .neomorphic-card {
+  background: rgb(var(--background));
+  box-shadow: var(--neomorphic-shadow-light), var(--neomorphic-shadow-dark);
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.theme-neumorphism .neomorphic-card:hover {
+  box-shadow: var(--neomorphic-shadow-light), var(--neomorphic-shadow-dark), inset 2px 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.theme-neumorphism .neomorphic-button {
+  background: rgb(var(--background));
+  box-shadow: var(--neomorphic-shadow-light), var(--neomorphic-shadow-dark);
+  border: none;
+  transition: all 0.2s ease;
+}
+
+.theme-neumorphism .neomorphic-button:hover {
+  box-shadow: var(--neomorphic-inset-light), var(--neomorphic-inset-dark);
+}
+
+.theme-neumorphism .neomorphic-button:active {
+  box-shadow: var(--neomorphic-inset-light), var(--neomorphic-inset-dark);
+  transform: scale(0.98);
+}
+
+.theme-neumorphism .neomorphic-input {
+  background: rgb(var(--background));
+  box-shadow: var(--neomorphic-inset-light), var(--neomorphic-inset-dark);
+  border: none;
+}

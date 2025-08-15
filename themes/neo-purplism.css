@@ -1,0 +1,127 @@
+.theme-neo-purplism {
+  --background: #f0f0f0;
+  --foreground: #000000;
+  --card: #f0f0f0;
+  --card-foreground: #000000;
+  --popover: #f0f0f0;
+  --popover-foreground: #000000;
+  --primary: #000000;
+  --primary-foreground: #ffffff;
+  --secondary: #ff00ff;
+  --secondary-foreground: #000000;
+  --muted: #dddddd;
+  --muted-foreground: #333333;
+  --accent: #ffff00;
+  --accent-foreground: #000000;
+  --destructive: #ff0000;
+  --destructive-foreground: #000000;
+  --border: #000000;
+  --input: #f0f0f0;
+  --ring: #ff00ff;
+  --chart-1: #ff00ff;
+  --chart-2: #00ffff;
+  --chart-3: #ffff00;
+  --chart-4: #ff5733;
+  --chart-5: #33ff57;
+  --sidebar: #f0f0f0;
+  --sidebar-foreground: #000000;
+  --sidebar-primary: #000000;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #ffff00;
+  --sidebar-accent-foreground: #000000;
+  --sidebar-border: #000000;
+  --sidebar-ring: #ff00ff;
+  --font-sans: "Archivo Black", sans-serif;
+  --font-serif: "Roboto Slab", serif;
+  --font-mono: "Space Mono", monospace;
+  --radius: 0rem;
+  --shadow-2xs: 5px 5px 0px 0px hsl(0 0% 0% / 0.5);
+  --shadow-xs: 5px 5px 0px 0px hsl(0 0% 0% / 0.5);
+  --shadow-sm: 5px 5px 0px 0px hsl(0 0% 0% / 1.0), 5px 1px 2px -1px hsl(0 0% 0% / 1.0);
+  --shadow: 5px 5px 0px 0px hsl(0 0% 0% / 1.0), 5px 1px 2px -1px hsl(0 0% 0% / 1.0);
+  --shadow-md: 5px 5px 0px 0px hsl(0 0% 0% / 1.0), 5px 2px 4px -1px hsl(0 0% 0% / 1.0);
+  --shadow-lg: 5px 5px 0px 0px hsl(0 0% 0% / 1.0), 5px 4px 6px -1px hsl(0 0% 0% / 1.0);
+  --shadow-xl: 5px 5px 0px 0px hsl(0 0% 0% / 1.0), 5px 8px 10px -1px hsl(0 0% 0% / 1.0);
+  --shadow-2xl: 5px 5px 0px 0px hsl(0 0% 0% / 2.5);
+  --tracking-normal: 0rem;
+  --spacing: 0.25rem;
+}
+
+.theme-neo-purplism.dark {
+  --background: #111111;
+  --foreground: #ffffff;
+  --card: #111111;
+  --card-foreground: #ffffff;
+  --popover: #111111;
+  --popover-foreground: #ffffff;
+  --primary: #ffffff;
+  --primary-foreground: #000000;
+  --secondary: #00ffff;
+  --secondary-foreground: #000000;
+  --muted: #222222;
+  --muted-foreground: #bbbbbb;
+  --accent: #ffff00;
+  --accent-foreground: #000000;
+  --destructive: #ff0000;
+  --destructive-foreground: #000000;
+  --border: #000000;
+  --input: #111111;
+  --ring: #00ffff;
+  --chart-1: #ff00ff;
+  --chart-2: #00ffff;
+  --chart-3: #ffff00;
+  --chart-4: #ff5733;
+  --chart-5: #33ff57;
+  --sidebar: #111111;
+  --sidebar-foreground: #ffffff;
+  --sidebar-primary: #ffffff;
+  --sidebar-primary-foreground: #000000;
+  --sidebar-accent: #ffff00;
+  --sidebar-accent-foreground: #000000;
+  --sidebar-border: #000000;
+  --sidebar-ring: #00ffff;
+}
+
+/* Neo-Purplism specific styles */
+.theme-neo-purplism .purplism-card {
+  background: var(--card);
+  border: 4px solid #ff00ff;
+  box-shadow: 8px 8px 0px #ff00ff;
+  border-radius: 0;
+  font-family: var(--font-sans);
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.theme-neo-purplism .purplism-button {
+  border: 3px solid #000000;
+  font-family: var(--font-sans);
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-radius: 0;
+  transition: all 0.1s ease;
+}
+
+.theme-neo-purplism .purplism-button:hover {
+  transform: translate(-2px, -2px);
+}
+
+.theme-neo-purplism .purplism-button-magenta {
+  background: #ff00ff;
+  color: #000000;
+  box-shadow: 4px 4px 0px #000000;
+}
+
+.theme-neo-purplism .purplism-button-cyan {
+  background: #00ffff;
+  color: #000000;
+  box-shadow: 4px 4px 0px #000000;
+}
+
+.theme-neo-purplism .purplism-button-yellow {
+  background: #ffff00;
+  color: #000000;
+  box-shadow: 4px 4px 0px #000000;
+}
