@@ -33,7 +33,7 @@ export function Navigation() {
       <NavigationMenu className="hidden md:flex">
         <NavigationMenuList>
           <NavigationMenuItem>
-            <NavigationMenuTrigger>Components</NavigationMenuTrigger>
+            <NavigationMenuTrigger>Dropdown</NavigationMenuTrigger>
             <NavigationMenuContent>
               <div className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2">
                 {components.map((component) => (
@@ -54,7 +54,7 @@ export function Navigation() {
               href="#examples"
               className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50"
             >
-              Examples
+              Button 
             </NavigationMenuLink>
           </NavigationMenuItem>
           <NavigationMenuItem>
@@ -62,7 +62,7 @@ export function Navigation() {
               href="/docs"
               className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50"
             >
-              Documentation
+              Button
             </NavigationMenuLink>
           </NavigationMenuItem>
         </NavigationMenuList>
