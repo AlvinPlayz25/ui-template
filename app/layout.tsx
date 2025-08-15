@@ -3,10 +3,12 @@ import type { Metadata } from "next"
 import { GeistSans } from "geist/font/sans"
 import { GeistMono } from "geist/font/mono"
 import { ThemeProvider } from "@/components/theme-provider"
-import { ThemeProvider as ColorThemeProvider } from "@/components/theme-provider"
+import { ThemeProvider as ColorThemeProvider } from "next-themes"
 import { GradientProvider } from "@/components/gradient-provider"
 import { StyleProvider } from "@/components/style-provider"
+import { Toaster } from "@/components/ui/sonner"
 import "./globals.css"
+import "../themes/neo-brutalism.css"
 
 export const metadata: Metadata = {
   title: "UI Component Library - Next.js Template",
@@ -32,13 +34,16 @@ html {
         `}</style>
       </head>
       <body>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
-          <ColorThemeProvider>
+        <ColorThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+          <ThemeProvider>
             <GradientProvider>
-              <StyleProvider>{children}</StyleProvider>
+              <StyleProvider>
+                {children}
+                <Toaster />
+              </StyleProvider>
             </GradientProvider>
-          </ColorThemeProvider>
-        </ThemeProvider>
+          </ThemeProvider>
+        </ColorThemeProvider>
       </body>
     </html>
   )
